@@ -1,0 +1,65 @@
+openapi: 3.0.0
+info:
+  title: SportLogic API (v2)
+  version: '2.0'
+  description: SportLogic API - version 2.
+  contact:
+    url: developer.sportlogic.com.au
+    email: developer@sportlogic.com.au
+servers:
+  - url: 'https://api-v2.sportlogic.net.au'
+paths:
+  /service/auth/request-api-access-token:
+    get:
+      summary: Request API Access Token
+      tags:
+        - Authentication Service
+      responses:
+        '200':
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+                description: access token
+      operationId: get-service-auth-request-api-access-token
+      description: Request API access token.
+  '/domain/programs/{id}':
+    parameters:
+      - schema:
+          type: integer
+        name: id
+        in: path
+        required: true
+        description: program id
+    get:
+      summary: Get Program
+      tags:
+        - Program Domain
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: ./Program.v2.json
+        '404':
+          description: Not Found
+      operationId: get-domain-programs-id
+      description: Get a Program
+      security:
+        - API Key: []
+        - Access Token: []
+components:
+  schemas: {}
+  securitySchemes:
+    API Key:
+      name: api_key
+      type: apiKey
+      in: header
+    Access Token:
+      name: access_token
+      type: apiKey
+      in: header
+security:
+  - API Key: []

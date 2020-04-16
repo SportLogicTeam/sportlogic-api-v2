@@ -1,0 +1,32 @@
+{
+  "title": "Program",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "active"
+  ],
+  "x-examples": {
+    "Example": {
+      "id": 1,
+      "name": "Elite Squad",
+      "active": true,
+      "description": "Elite training squad."
+    }
+  },
+  "description": "Program"
+}
