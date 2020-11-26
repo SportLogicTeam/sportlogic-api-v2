@@ -61,7 +61,8 @@ paths:
   /domain/contacts:
     get:
       summary: Your GET endpoint
-      tags: []
+      tags:
+        - Contact Domain
       responses:
         '200':
           description: OK
@@ -99,3 +100,5 @@ components:
       in: header
 security:
   - API Key: []
+tags:
+  - name: Contact Domain
