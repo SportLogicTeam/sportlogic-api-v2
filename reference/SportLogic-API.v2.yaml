@@ -71,6 +71,7 @@ paths:
                 type: array
                 items:
                   $ref: ./Contact.v2.json
+              examples: {}
       operationId: get-domain-contacts
       description: Retrieve contacts
       parameters:

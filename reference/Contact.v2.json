@@ -11,5 +11,12 @@
     "lastName": {
       "type": "string"
     }
+  },
+  "x-examples": {
+    "Contact": {
+      "id": "2c90819a67be97600167becd4497068a",
+      "firstName": "Stephen",
+      "lastName": "Hawking"
+    }
   }
 }
