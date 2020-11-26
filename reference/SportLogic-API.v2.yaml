@@ -44,6 +44,13 @@ paths:
             application/json:
               schema:
                 $ref: ./Program.v2.json
+              examples:
+                example-1:
+                  value:
+                    id: 0
+                    name: string
+                    active: true
+                    description: string
         '404':
           description: Not Found
       operationId: get-domain-programs-id
@@ -51,6 +58,33 @@ paths:
       security:
         - API Key: []
         - Access Token: []
+  /domain/contacts:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: ./Contact.v2.json
+      operationId: get-domain-contacts
+      description: Retrieve contacts
+      parameters:
+        - schema:
+            type: number
+          in: query
+          name: skip
+        - schema:
+            type: number
+          in: query
+          name: limit
+      security:
+        - Access Token: []
+    parameters: []
 components:
   schemas: {}
   securitySchemes:
