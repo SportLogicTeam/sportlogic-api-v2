@@ -85,8 +85,31 @@ paths:
           in: query
           name: limit
       security:
-        - Access Token: []
+        - API Key: []
     parameters: []
+  '/domain/contacts/{id}':
+    parameters:
+      - schema:
+          type: string
+        name: id
+        in: path
+        required: true
+        description: Contact ID
+    get:
+      summary: Your GET endpoint
+      tags:
+        - Contact Domain
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: ./Contact.v2.json
+      operationId: get-domain-contacts-id
+      description: Get a single Contact.
+      security:
+        - API Key: []
 components:
   schemas: {}
   securitySchemes:
