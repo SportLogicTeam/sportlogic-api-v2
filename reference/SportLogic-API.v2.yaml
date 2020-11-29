@@ -96,13 +96,7 @@ paths:
       security:
         - API Key: []
 components:
-  schemas:
-    Contact:
-      title: Contact
-      type: object
-      properties:
-        id:
-          type: string
+  schemas: {}
   securitySchemes:
     API Key:
       name: api_key
