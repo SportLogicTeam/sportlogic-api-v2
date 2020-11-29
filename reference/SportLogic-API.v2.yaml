@@ -60,7 +60,7 @@ paths:
         - Access Token: []
   /domain/contacts:
     get:
-      summary: Your GET endpoint
+      summary: Get Contacts
       tags:
         - Contact Domain
       responses:
@@ -106,6 +106,8 @@ paths:
             application/json:
               schema:
                 $ref: ./Contact.v2.json
+        '404':
+          description: Not Found
       operationId: get-domain-contacts-id
       description: Get a single Contact.
       security:
