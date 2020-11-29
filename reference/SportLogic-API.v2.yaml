@@ -5,26 +5,10 @@ info:
   description: SportLogic API - version 2.
   contact:
     email: developer@sportlogic.com.au
-    name: Developer
     url: www.sportlogic.com.au
 servers:
   - url: 'https://api-v2.sportlogic.net.au'
 paths:
-  /service/auth/request-api-access-token:
-    get:
-      summary: Request API Access Token
-      tags:
-        - Authentication Service
-      responses:
-        '200':
-          description: OK
-          content:
-            text/plain:
-              schema:
-                type: string
-                description: access token
-      operationId: get-service-auth-request-api-access-token
-      description: Request API access token.
   '/domain/programs/{id}':
     parameters:
       - schema:
@@ -57,7 +41,6 @@ paths:
       description: Get a Program
       security:
         - API Key: []
-        - Access Token: []
   /domain/contacts:
     get:
       summary: Get Contacts
@@ -96,7 +79,7 @@ paths:
         required: true
         description: Contact ID
     get:
-      summary: Your GET endpoint
+      summary: Get Contact
       tags:
         - Contact Domain
       responses:
@@ -113,14 +96,16 @@ paths:
       security:
         - API Key: []
 components:
-  schemas: {}
+  schemas:
+    Contact:
+      title: Contact
+      type: object
+      properties:
+        id:
+          type: string
   securitySchemes:
     API Key:
       name: api_key
-      type: apiKey
-      in: header
-    Access Token:
-      name: access_token
       type: apiKey
       in: header
 security:
