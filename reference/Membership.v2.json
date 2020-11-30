@@ -1,0 +1,36 @@
+{
+  "title": "Membership.v2",
+  "type": "object",
+  "description": "Membership",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "membershipNumber": {
+      "type": "string"
+    },
+    "type": {
+      "$ref": "./MembershipType.v2.json"
+    },
+    "status": {
+      "type": "string"
+    },
+    "contact": {
+      "$ref": "./Contact.v2.json"
+    },
+    "cardNumber": {
+      "type": "string"
+    },
+    "expiry": {
+      "type": "string",
+      "description": "Membership expiry date in yyyy-MM-dd (if applicable)"
+    }
+  },
+  "required": [
+    "id",
+    "membershipNumber",
+    "status",
+    "contact",
+    "type"
+  ]
+}

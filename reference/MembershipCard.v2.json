@@ -1,0 +1,16 @@
+{
+  "title": "MembershipCard.v2",
+  "type": "object",
+  "description": "Membership card",
+  "properties": {
+    "memberId": {
+      "type": "string"
+    },
+    "cardNumber": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "memberId"
+  ]
+}

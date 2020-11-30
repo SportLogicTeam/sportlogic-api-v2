@@ -1,0 +1,13 @@
+{
+  "title": "MembershipType.v2",
+  "type": "object",
+  "description": "Membership Type",
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

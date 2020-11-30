@@ -95,6 +95,47 @@ paths:
       description: Get a single Contact.
       security:
         - API Key: []
+  '/domain/members/{id}/card':
+    parameters:
+      - schema:
+          type: string
+        name: id
+        in: path
+        required: true
+        description: membership id
+    get:
+      summary: Get member card
+      tags:
+        - Membership Domain
+      responses:
+        '200':
+          description: OK
+        '404':
+          description: Not Found
+      operationId: get-domain-members-id-card
+      description: Get member card details
+      security:
+        - API Key: []
+    put:
+      summary: Update member card
+      operationId: put-domain-members-id-card
+      responses:
+        '200':
+          description: Updated
+        '201':
+          description: Created
+      description: Update member card details
+      security:
+        - API Key: []
+  /domain/members:
+    get:
+      summary: Get members
+      tags: []
+      responses: {}
+      operationId: get-domain-members
+      description: ''
+      security:
+        - API Key: []
 components:
   schemas: {}
   securitySchemes:
@@ -106,3 +147,4 @@ security:
   - API Key: []
 tags:
   - name: Contact Domain
+  - name: Membership Domain
