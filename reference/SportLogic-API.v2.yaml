@@ -139,7 +139,8 @@ paths:
   /domain/members:
     get:
       summary: Get members
-      tags: []
+      tags:
+        - Membership Domain
       responses:
         '200':
           description: OK
