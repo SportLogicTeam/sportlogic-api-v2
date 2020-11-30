@@ -110,6 +110,10 @@ paths:
       responses:
         '200':
           description: OK
+          content:
+            application/json:
+              schema:
+                $ref: ./MembershipCard.v2.json
         '404':
           description: Not Found
       operationId: get-domain-members-id-card
@@ -127,11 +131,24 @@ paths:
       description: Update member card details
       security:
         - API Key: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: ./MembershipCard.v2.json
   /domain/members:
     get:
       summary: Get members
       tags: []
-      responses: {}
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: ./Membership.v2.json
       operationId: get-domain-members
       description: ''
       security:
