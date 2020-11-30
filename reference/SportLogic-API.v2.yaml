@@ -136,6 +136,8 @@ paths:
           application/json:
             schema:
               $ref: ./MembershipCard.v2.json
+      tags:
+        - Membership Domain
   /domain/members:
     get:
       summary: Get members
