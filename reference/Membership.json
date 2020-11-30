@@ -1,5 +1,5 @@
 {
-  "title": "Membership.v2",
+  "title": "Membership",
   "type": "object",
   "description": "Membership",
   "properties": {
@@ -10,13 +10,13 @@
       "type": "string"
     },
     "type": {
-      "$ref": "./MembershipType.v2.json"
+      "$ref": "./MembershipType.json"
     },
     "status": {
       "type": "string"
     },
     "contact": {
-      "$ref": "./Contact.v2.json"
+      "$ref": "./Contact.json"
     },
     "cardNumber": {
       "type": "string"

@@ -1,5 +1,5 @@
 {
-  "title": "MembershipCard.v2",
+  "title": "MembershipCard",
   "type": "object",
   "description": "Membership card",
   "properties": {

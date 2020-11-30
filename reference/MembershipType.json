@@ -1,5 +1,5 @@
 {
-  "title": "MembershipType.v2",
+  "title": "MembershipType",
   "type": "object",
   "description": "Membership Type",
   "properties": {

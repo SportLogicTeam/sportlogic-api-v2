@@ -27,7 +27,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: ./Program.v2.json
+                $ref: ./Program.json
               examples:
                 example-1:
                   value:
@@ -54,7 +54,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: ./Contact.v2.json
+                  $ref: ./Contact.json
               examples: {}
       operationId: get-domain-contacts
       description: Retrieve contacts
@@ -88,7 +88,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: ./Contact.v2.json
+                $ref: ./Contact.json
         '404':
           description: Not Found
       operationId: get-domain-contacts-id
@@ -113,7 +113,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: ./MembershipCard.v2.json
+                $ref: ./MembershipCard.json
         '404':
           description: Not Found
       operationId: get-domain-members-id-card
@@ -135,7 +135,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: ./MembershipCard.v2.json
+              $ref: ./MembershipCard.json
       tags:
         - Membership Domain
   /domain/members:
@@ -151,7 +151,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: ./Membership.v2.json
+                  $ref: ./Membership.json
       operationId: get-domain-members
       description: ''
       security:
