@@ -27,6 +27,21 @@
     },
     "mobile": {
       "type": "string"
+    },
+    "custom1": {
+      "type": "string"
+    },
+    "custom2": {
+      "type": "string"
+    },
+    "custom3": {
+      "type": "string"
+    },
+    "custom4": {
+      "type": "string"
+    },
+    "custom5": {
+      "type": "string"
     }
   }
 }
