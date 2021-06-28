@@ -9,7 +9,7 @@ info:
 servers:
   - url: 'https://api-v2.sportlogic.net.au'
 paths:
-  '/domain/programs/{id}':
+  '/programs/{id}':
     parameters:
       - schema:
           type: integer
@@ -41,7 +41,7 @@ paths:
       description: Get a Program
       security:
         - API Key: []
-  /domain/contacts:
+  /contacts:
     get:
       summary: Get Contacts
       tags:
@@ -70,7 +70,7 @@ paths:
       security:
         - API Key: []
     parameters: []
-  '/domain/contacts/{id}':
+  '/contacts/{id}':
     parameters:
       - schema:
           type: string
@@ -95,7 +95,7 @@ paths:
       description: Get a single Contact.
       security:
         - API Key: []
-  '/domain/members/{id}/card':
+  '/members/{id}/card':
     parameters:
       - schema:
           type: string
@@ -138,7 +138,7 @@ paths:
               $ref: ./MembershipCard.json
       tags:
         - Membership Domain
-  /domain/members:
+  /members:
     get:
       summary: Get members
       tags:
@@ -156,6 +156,7 @@ paths:
       description: ''
       security:
         - API Key: []
+    parameters: []
 components:
   schemas: {}
   securitySchemes:
