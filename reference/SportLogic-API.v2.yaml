@@ -186,7 +186,7 @@ components:
   schemas: {}
   securitySchemes:
     API Key:
-      name: api_key
+      name: apiKey
       type: apiKey
       in: header
 security:
