@@ -159,7 +159,7 @@ paths:
     parameters: []
   /venue-platform-service/venues:
     get:
-      summary: Your GET endpoint
+      summary: Get Venues
       tags:
         - Venue Platform
       responses:
@@ -178,6 +178,7 @@ paths:
           in: query
           name: siteCode
           description: Site Code e.g. "tennisvenues.com.au"
+          required: true
       security:
         - API Key: []
     parameters: []
