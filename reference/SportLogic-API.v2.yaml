@@ -157,6 +157,30 @@ paths:
       security:
         - API Key: []
     parameters: []
+  /venue-platform-service/venues:
+    get:
+      summary: Your GET endpoint
+      tags:
+        - Venue Platform
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: ./VPVenue.json
+      operationId: get-venue-platform-service
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: siteCode
+          description: Site Code e.g. "tennisvenues.com.au"
+      security:
+        - API Key: []
+    parameters: []
 components:
   schemas: {}
   securitySchemes:

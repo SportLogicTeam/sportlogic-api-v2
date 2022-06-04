@@ -1,0 +1,79 @@
+{
+  "title": "VPVenue",
+  "x-stoplight": {
+    "id": "36cmhk61231rh"
+  },
+  "type": "object",
+  "description": "A Venue on the Venue Platform.",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "alias": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "venueId": {
+      "type": "integer"
+    },
+    "siteCode": {
+      "type": "string"
+    },
+    "sportLogicCustomerId": {
+      "type": "string"
+    },
+    "addressLine1": {
+      "type": "string"
+    },
+    "addressLine2": {
+      "type": "string"
+    },
+    "suburb": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "countryCode": {
+      "type": "string"
+    },
+    "phone1": {
+      "type": "string"
+    },
+    "phone2": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "web": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "number"
+    },
+    "longitude": {
+      "type": "number"
+    },
+    "timezone": {
+      "type": "string"
+    },
+    "facilities": {
+      "type": "string"
+    },
+    "hideFromSearch": {
+      "type": "boolean"
+    }
+  }
+}
