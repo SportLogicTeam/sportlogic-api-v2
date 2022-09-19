@@ -179,6 +179,21 @@ paths:
           name: siteCode
           description: Site Code e.g. "tennisvenues.com.au"
           required: true
+        - schema:
+            type: string
+          in: query
+          name: sportType
+          description: 'Sport Type e.g. "Squash", "Badminton"'
+        - schema:
+            type: integer
+          in: query
+          name: skip
+          description: Number of records to skip.
+        - schema:
+            type: integer
+          in: query
+          name: limit
+          description: Number of records to fetch.
       security:
         - API Key: []
     parameters: []
