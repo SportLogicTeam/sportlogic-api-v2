@@ -74,6 +74,9 @@
     },
     "hideFromSearch": {
       "type": "boolean"
+    },
+    "sportType": {
+      "type": "string"
     }
   }
 }
