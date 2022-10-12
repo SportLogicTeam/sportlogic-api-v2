@@ -77,6 +77,23 @@
     },
     "sportType": {
       "type": "string"
+    },
+    "logo": {
+      "type": "string"
+    },
+    "featureImages": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "example": "\"image1.png\", \"image2.jpg\""
+      }
+    },
+    "galleryImages": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "example": "\"image1.png\", \"image2.jpg\""
+      }
     }
   }
 }
