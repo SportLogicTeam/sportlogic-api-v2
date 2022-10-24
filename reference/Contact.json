@@ -1,20 +1,94 @@
 {
-  "title": "Contact",
   "type": "object",
   "x-examples": {
-    "Contact": {
-      "id": "2c90819a67be97600167becd4497068a",
-      "firstName": "Stephen",
-      "lastName": "Hawking",
-      "email": "blah@blah.com",
-      "mobile": "0411222333"
+    "Example 1": {
+      "id": "6c9081d85d61b53d015d974cc3ec008c",
+      "firstName": "John",
+      "lastName": "Smith",
+      "type": "I",
+      "accountManagerId": null,
+      "company": "",
+      "title": "",
+      "workPhone": "",
+      "homePhone": "",
+      "mobile": "0411 222 333",
+      "web": "",
+      "address1": "",
+      "address2": "",
+      "suburb": "",
+      "state": "",
+      "postcode": "",
+      "country": "",
+      "mother": "",
+      "motherEmail": "",
+      "father": "",
+      "fatherEmail": "",
+      "birthday": "",
+      "itn": "",
+      "coach": "",
+      "occupation": "",
+      "gender": "M",
+      "school": "",
+      "schoolClass": "",
+      "primaryContact": "",
+      "hasMedicalCondition": false,
+      "medicalCondition": "",
+      "medicalTreatment": "",
+      "skillLevel": null,
+      "active": true,
+      "notes": null,
+      "doNotEmail": null,
+      "doNotPost": null,
+      "doNotCall": null,
+      "doNotPhoto": null,
+      "custom1": "",
+      "custom2": "",
+      "custom3": "",
+      "custom4": "",
+      "custom5": "",
+      "custom6": "",
+      "custom7": "",
+      "custom8": "",
+      "custom9": "",
+      "custom10": "",
+      "custom11": "",
+      "custom12": "",
+      "custom13": "",
+      "custom14": "",
+      "custom15": "",
+      "custom16": "",
+      "custom17": "",
+      "custom18": "",
+      "custom19": "",
+      "custom20": "",
+      "nameIgnoreNull": "Victor Kerr",
+      "individual": true,
+      "companyOrOrganisation": false,
+      "emailAddress": "\"Victor Kerr\" <vkerr@stjames.net.au>",
+      "email": "vkerr@stjames.net.au",
+      "email2": null,
+      "email3": null,
+      "subAccount": false,
+      "parentAccountContactId": null,
+      "createdTimestamp": 1501481963598,
+      "deleted": false,
+      "deletedBy": null,
+      "deletedTimestamp": null,
+      "externalId": "",
+      "systemDefined": false,
+      "systemDefinedContact": false,
+      "emergencyContactName": null,
+      "emergencyContactPhone": null,
+      "emergencyContactRelationship": null,
+      "utrPlayerId": "",
+      "utrSinglesRating": null,
+      "utrDoublesRating": null,
+      "originId": null
     }
   },
-  "description": "",
   "properties": {
     "id": {
-      "type": "string",
-      "description": "unique id"
+      "type": "string"
     },
     "firstName": {
       "type": "string"
@@ -22,11 +96,104 @@
     "lastName": {
       "type": "string"
     },
-    "email": {
+    "type": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "workPhone": {
+      "type": "string"
+    },
+    "homePhone": {
       "type": "string"
     },
     "mobile": {
       "type": "string"
+    },
+    "web": {
+      "type": "string"
+    },
+    "address1": {
+      "type": "string"
+    },
+    "address2": {
+      "type": "string"
+    },
+    "suburb": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "mother": {
+      "type": "string"
+    },
+    "motherEmail": {
+      "type": "string"
+    },
+    "father": {
+      "type": "string"
+    },
+    "fatherEmail": {
+      "type": "string"
+    },
+    "birthday": {
+      "type": "string"
+    },
+    "occupation": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "school": {
+      "type": "string"
+    },
+    "schoolClass": {
+      "type": "string"
+    },
+    "primaryContact": {
+      "type": "string"
+    },
+    "hasMedicalCondition": {
+      "type": "boolean"
+    },
+    "medicalCondition": {
+      "type": "string"
+    },
+    "medicalTreatment": {
+      "type": "string"
+    },
+    "skillLevel": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "doNotEmail": {
+      "type": "boolean"
+    },
+    "doNotPost": {
+      "type": "boolean"
+    },
+    "doNotCall": {
+      "type": "boolean"
+    },
+    "doNotPhoto": {
+      "type": "boolean"
     },
     "custom1": {
       "type": "string"
@@ -41,6 +208,111 @@
       "type": "string"
     },
     "custom5": {
+      "type": "string"
+    },
+    "custom6": {
+      "type": "string"
+    },
+    "custom7": {
+      "type": "string"
+    },
+    "custom8": {
+      "type": "string"
+    },
+    "custom9": {
+      "type": "string"
+    },
+    "custom10": {
+      "type": "string"
+    },
+    "custom11": {
+      "type": "string"
+    },
+    "custom12": {
+      "type": "string"
+    },
+    "custom13": {
+      "type": "string"
+    },
+    "custom14": {
+      "type": "string"
+    },
+    "custom15": {
+      "type": "string"
+    },
+    "custom16": {
+      "type": "string"
+    },
+    "custom17": {
+      "type": "string"
+    },
+    "custom18": {
+      "type": "string"
+    },
+    "custom19": {
+      "type": "string"
+    },
+    "custom20": {
+      "type": "string"
+    },
+    "individual": {
+      "type": "boolean"
+    },
+    "companyOrOrganisation": {
+      "type": "boolean"
+    },
+    "emailAddress": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "email2": {
+      "type": "string"
+    },
+    "email3": {
+      "type": "string"
+    },
+    "subAccount": {
+      "type": "boolean"
+    },
+    "parentAccountContactId": {
+      "type": "string"
+    },
+    "createdTimestamp": {
+      "type": "integer"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "externalId": {
+      "type": "string"
+    },
+    "systemDefined": {
+      "type": "boolean"
+    },
+    "systemDefinedContact": {
+      "type": "boolean"
+    },
+    "emergencyContactName": {
+      "type": "string"
+    },
+    "emergencyContactPhone": {
+      "type": "string"
+    },
+    "emergencyContactRelationship": {
+      "type": "string"
+    },
+    "utrPlayerId": {
+      "type": "string"
+    },
+    "utrSinglesRating": {
+      "type": "string"
+    },
+    "utrDoublesRating": {
+      "type": "string"
+    },
+    "originId": {
       "type": "string"
     }
   }
