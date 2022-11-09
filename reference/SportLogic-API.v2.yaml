@@ -224,7 +224,33 @@ paths:
           in: query
           name: webEnabledOnly
           description: Filter resources by web enabled
+      description: Retrieve resources
     parameters: []
+  '/resources/{id}':
+    parameters:
+      - schema:
+          type: string
+        name: id
+        in: path
+        required: true
+        description: Resource ID
+    get:
+      summary: Your GET endpoint
+      tags:
+        - Resource Domain
+      responses:
+        '200':
+          description: OK
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: ./Resource.json
+      operationId: get-resources-id
+      description: Retrieve resource by ID
+      security:
+        - API Key: []
 components:
   schemas: {}
   securitySchemes:
