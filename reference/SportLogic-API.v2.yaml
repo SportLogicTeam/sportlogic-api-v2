@@ -200,7 +200,8 @@ paths:
   /resources:
     get:
       summary: Get Resources
-      tags: []
+      tags:
+        - Resource Domain
       responses:
         '200':
           description: OK
