@@ -200,7 +200,6 @@ paths:
   /resources:
     get:
       summary: Your GET endpoint
-      tags: []
       responses:
         '200':
           description: OK
@@ -225,6 +224,8 @@ paths:
           in: query
           name: webEnabledOnly
           description: Filter resources by web enabled
+      tags:
+        - Resource Domain
   '/resources/{id}':
     parameters:
       - schema:
