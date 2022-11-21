@@ -235,7 +235,8 @@ paths:
         required: true
     get:
       summary: Your GET endpoint
-      tags: []
+      tags:
+        - Resource Domain
       responses:
         '200':
           description: OK
