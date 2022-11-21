@@ -199,7 +199,7 @@ paths:
     parameters: []
   /resources:
     get:
-      summary: Your GET endpoint
+      summary: Get Resources
       responses:
         '200':
           description: OK
@@ -234,7 +234,7 @@ paths:
         in: path
         required: true
     get:
-      summary: Your GET endpoint
+      summary: Get Resource
       tags:
         - Resource Domain
       responses:
