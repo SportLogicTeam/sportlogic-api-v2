@@ -197,6 +197,53 @@ paths:
       security:
         - API Key: []
     parameters: []
+  /resources:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: ./Resource.json
+      operationId: get-resources
+      description: Retrieve resources
+      security:
+        - API Key: []
+      parameters:
+        - schema:
+            type: integer
+          in: query
+          name: venueId
+          description: Get resources by venue
+        - schema:
+            type: boolean
+          in: query
+          name: webEnabledOnly
+          description: Filter resources by web enabled
+  '/resources/{id}':
+    parameters:
+      - schema:
+          type: string
+        name: id
+        in: path
+        required: true
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+        '404':
+          description: Not Found
+      operationId: get-resources-id
+      description: Retrieve resource by ID
+      security:
+        - API Key: []
 components:
   schemas: {}
   securitySchemes:

@@ -1,0 +1,28 @@
+{
+  "title": "Resource",
+  "x-stoplight": {
+    "id": "2o22yn7oonald"
+  },
+ "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "venueId": {
+      "type": "integer"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "webEnabled": {
+      "type": "boolean"
+    }
+  },
+  "x-internal": false
+}
