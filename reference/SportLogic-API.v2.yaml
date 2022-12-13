@@ -248,7 +248,7 @@ paths:
         - API Key: []
   /web-booking-service/get-business-opening-hours:
     get:
-      summary: Your GET endpoint
+      summary: Get Venue Opening Hours
       tags: []
       responses:
         '200':
@@ -259,6 +259,8 @@ paths:
                 type: array
                 items:
                   type: string
+                  format: time
+                  pattern: 'HH:mm:ss'
       operationId: get-web-booking-service-get-business-opening-hours
       parameters:
         - schema:
