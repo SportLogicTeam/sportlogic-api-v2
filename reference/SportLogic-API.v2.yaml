@@ -246,6 +246,33 @@ paths:
       description: Retrieve resource by ID
       security:
         - API Key: []
+  /web-booking-service/get-business-opening-hours:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+      operationId: get-web-booking-service-get-business-opening-hours
+      parameters:
+        - schema:
+            type: integer
+          in: query
+          name: venueId
+          description: ID of the venue
+        - schema:
+            type: string
+          in: query
+          name: date
+          description: 'The date to check opening hours, format yyyyMMdd'
+      security:
+        - API Key: []
 components:
   schemas: {}
   securitySchemes:
