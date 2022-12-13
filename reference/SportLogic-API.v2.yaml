@@ -257,6 +257,7 @@ paths:
             application/json:
               schema:
                 type: array
+                description: 'Return an array of 2 strings - the start and end time. Both time strings are in HH:mm:ss format'
                 items:
                   type: string
                   format: time
