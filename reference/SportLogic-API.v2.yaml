@@ -283,7 +283,7 @@ paths:
       responses: {}
       operationId: get-web-booking-service-create-web-booking
     post:
-      summary: ''
+      summary: Create Web Booking
       operationId: post-web-booking-service-create-web-booking
       responses:
         '200':
