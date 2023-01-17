@@ -276,6 +276,161 @@ paths:
           description: 'The date to check opening hours, format yyyyMMdd'
       security:
         - API Key: []
+  /web-booking-service/create-web-booking:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+      operationId: get-web-booking-service-create-web-booking
+    post:
+      summary: ''
+      operationId: post-web-booking-service-create-web-booking
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+                description: WebBookingId
+        '500':
+          description: Internal Server Error
+      security:
+        - API Key: []
+      parameters:
+        - schema:
+            type: string
+            format: date
+          in: query
+          name: date
+          required: true
+          description: 'Booking date, format yyyyMMdd'
+        - schema:
+            type: string
+          in: query
+          name: timeFrom
+          description: 'Booking start time, format HH:mm:ss'
+          required: true
+        - schema:
+            type: string
+          in: query
+          name: timeTo
+          description: 'Booking end time, format HH:mm:ss'
+          required: true
+        - schema:
+            type: string
+          in: query
+          name: resourceId
+          description: Resource ID
+          required: true
+        - schema:
+            type: string
+          in: query
+          name: venueName
+          description: Venue name
+          required: true
+        - schema:
+            type: number
+          in: query
+          name: fee
+          required: true
+          description: Booking fee
+        - schema:
+            type: number
+          in: query
+          name: dueAmount
+          description: Amount required to be paid
+          required: true
+        - schema:
+            type: string
+          in: query
+          name: taxCode
+          required: true
+        - schema:
+            type: string
+          in: query
+          name: bookingName
+          description: Booking person's name
+          required: true
+        - schema:
+            type: string
+          in: query
+          name: bookingEmail
+          description: Booking person's email
+          required: true
+        - schema:
+            type: string
+          in: query
+          name: bookingContactNumber
+          description: Booking person's contact number
+        - schema:
+            type: string
+          in: query
+          name: membershipId
+          description: Membership ID
+        - schema:
+            type: string
+          in: query
+          name: membershipOrCardNumberUsed
+          description: Membership number
+        - schema:
+            type: integer
+          in: query
+          name: pendingExpired
+          description: 'How long will booking stay in the system in minutes, system default expired in 8 minutes'
+        - schema:
+            type: boolean
+          in: query
+          name: applyCredit
+          description: Is booking applying credit note
+        - schema:
+            type: string
+          in: query
+          name: creditNoteNumber
+          description: Credit note number to be applied
+        - schema:
+            type: number
+          in: query
+          name: creditAmountUsed
+          description: Credit amount to be applied
+        - schema:
+            type: boolean
+          in: query
+          name: promoApplied
+          description: Is booking applying promotion code
+        - schema:
+            type: string
+          in: query
+          name: promoCode
+          description: Promotion code to be applied
+        - schema:
+            type: number
+          in: query
+          name: promoAmount
+          description: Promotion code amount to be applied
+        - schema:
+            type: string
+          in: query
+          name: venueEmail
+        - schema:
+            type: string
+          in: query
+          name: venueNotificationEmails
+        - schema:
+            type: string
+          in: query
+          name: siteCode
+          description: Web site code
+        - schema:
+            type: string
+          in: query
+          name: externalBookingId
+          description: External booking record ID
+        - schema:
+            type: string
+          in: query
+          name: externalUserId
+          description: External user ID
 components:
   schemas: {}
   securitySchemes:
