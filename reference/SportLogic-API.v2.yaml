@@ -431,6 +431,11 @@ paths:
           in: query
           name: externalUserId
           description: External user ID
+        - schema:
+            type: string
+          in: query
+          name: contactId
+          description: SportLogic contact ID
 components:
   schemas: {}
   securitySchemes:
