@@ -277,11 +277,6 @@ paths:
       security:
         - API Key: []
   /web-booking-service/create-web-booking:
-    get:
-      summary: Your GET endpoint
-      tags: []
-      responses: {}
-      operationId: get-web-booking-service-create-web-booking
     post:
       summary: Create Web Booking
       operationId: post-web-booking-service-create-web-booking
@@ -436,6 +431,54 @@ paths:
           in: query
           name: contactId
           description: SportLogic contact ID
+  /web-booking-service/confirm-web-booking:
+    post:
+      summary: Confirm Web Booking
+      operationId: post-web-booking-service-confirm-web-booking
+      responses:
+        '200':
+          description: OK
+        '500':
+          description: Internal Server Error
+      security:
+        - API Key: []
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: bookingRef
+          required: true
+          description: Booking reference from WebBooking
+        - schema:
+            type: string
+          in: query
+          name: venueAlias
+          description: 'Venue Alias, will be stored in WebBooking'
+        - schema:
+            type: string
+          in: query
+          name: venueName
+          description: 'Venue Name, will be stored in WebBooking'
+        - schema:
+            type: string
+          in: query
+          name: venueEmail
+          description: 'Venue Email, will be stored in WebBooking'
+        - schema:
+            type: string
+          in: query
+          name: notificationEmails
+          description: 'User''s email, for sending confirmation email'
+        - schema:
+            type: string
+          in: query
+          name: siteCode
+          description: Booking platform website
+        - schema:
+            type: string
+          in: query
+          name: accessCode
+          description: Resource access code (if any)
 components:
   schemas: {}
   securitySchemes:
