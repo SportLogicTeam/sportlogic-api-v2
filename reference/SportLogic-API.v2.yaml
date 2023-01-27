@@ -479,6 +479,57 @@ paths:
           in: query
           name: accessCode
           description: Resource access code (if any)
+  /booking-service/get-bookings:
+    get:
+      summary: Get Bookings By Contact
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+      operationId: get-booking-service-get-bookings
+      security:
+        - API Key: []
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: contactId
+          required: true
+          description: SportLogic Contact ID
+        - name: startDate
+        - schema:
+            type: string
+          in: query
+          name: startDate
+          required: true
+          description: 'Date range start date, format yyyyMMd'
+        - schema:
+            type: string
+          in: query
+          name: endDate
+          description: 'Date range end date, format yyyyMMd'
+          required: true
+        - schema:
+            type: boolean
+          in: query
+          name: excludePending
+          description: Excludes pending bookings
+        - schema:
+            type: boolean
+          in: query
+          name: excludeCancelled
+          description: Excludes cancelled bookings
+        - schema:
+            type: integer
+          in: query
+          name: maxResults
+          description: Max search results
 components:
   schemas: {}
   securitySchemes:
