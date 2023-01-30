@@ -531,6 +531,53 @@ paths:
           in: query
           name: maxResults
           description: Max search results
+  /booking-service/calculate-booking-fee:
+    get:
+      summary: Calculate Booking Fee
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: number
+        '404':
+          description: Not Found
+      operationId: get-booking-service-calculate-booking-fee
+      security:
+        - API Key: []
+      parameters:
+        - schema:
+            type: string
+          in: query
+          name: contactId
+          description: SportLogic Contact ID
+        - schema:
+            type: string
+          in: query
+          name: date
+          description: 'Booking Date, format yyyyMMdd'
+          required: true
+        - schema:
+            type: string
+          in: query
+          name: timeFrom
+          description: 'From Time, format HH:mm:ss'
+          required: true
+        - schema:
+            type: string
+          in: query
+          description: 'To Time, format HH:mm:ss'
+          name: timeFrom
+          required: true
+        - schema:
+            type: string
+          in: query
+          name: resourceId
+          description: Booking Resource ID
+          required: true
+      description: Get booking fee in dollar
 components:
   schemas: {}
   securitySchemes:
