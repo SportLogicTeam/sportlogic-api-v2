@@ -431,9 +431,9 @@ paths:
           in: query
           name: contactId
           description: SportLogic contact ID
-  /web-booking-service/confirm-web-booking:
+  /web-booking-service/confirm-web-booking-no-payment:
     post:
-      summary: Confirm Web Booking
+      summary: Confirm Web Booking No Payment
       operationId: post-web-booking-service-confirm-web-booking
       responses:
         '200':
@@ -479,6 +479,7 @@ paths:
           in: query
           name: accessCode
           description: Resource access code (if any)
+    parameters: []
   /booking-service/get-bookings:
     get:
       summary: Get Bookings By Contact
