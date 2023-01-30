@@ -1,0 +1,272 @@
+{
+  "type": "object",
+  "x-examples": {
+    "Example 1": {
+      "id": "028a1657-1d4f-4a41-b7c1-3b7cc7473c71",
+      "type": "Internet Booking",
+      "reference": "2023013109001719",
+      "version": 2,
+      "deleted": false,
+      "deletedTimestamp": null,
+      "timeDurationResourceDisplayText": "9am (1 hour) Court 4",
+      "cancelled": false,
+      "hasPayment": false,
+      "hasInvoice": false,
+      "repeatExdate": null,
+      "repeatRRule": null,
+      "toMidnight": false,
+      "repeatUntil": null,
+      "fromDateTime": 1675116000000,
+      "toDateTime": 1675119600000,
+      "repeatFrom": null,
+      "toDateObject": 1675083600000,
+      "contactId": "8a103dc95cade841015cade94f110004",
+      "description": "Test User",
+      "notes": null,
+      "venueId": 1,
+      "status": null,
+      "pending": false,
+      "createdTimestamp": 1675038261130,
+      "membershipNumber": "100233",
+      "createdBy": null,
+      "billingRunId": null,
+      "noShow": false,
+      "rainOut": false,
+      "displayTextV1": "31/01/23 Tuesday 9am (1 hour) Court 4",
+      "fromDate": "20230131",
+      "bondId": null,
+      "recurrent": false,
+      "fromTime": "09:00:00",
+      "toTime": "10:00:00",
+      "toDate": "20230131",
+      "customData": "#Mon Jan 30 11:24:21 AEDT 2023\r\nname=Test User\r\nadapter.id=InternetBookingActivityAdapter\r\nmembershipNumber=100233\r\ncontactNumber=0412345678\r\n",
+      "nullBooking": false,
+      "recurrentInstance": false,
+      "recurrentActivityId": null,
+      "recurrentActivityMetadata": null,
+      "hasUnpaidInvoice": false,
+      "fromDateObject": 1675083600000,
+      "membershipInfo": "Junior",
+      "memberCardNumber": null,
+      "durationInHours": 1,
+      "roundedDurationInMinutes": 60,
+      "durationInMinutes": 60,
+      "repeatFromDate": null,
+      "repeatUntilDate": null,
+      "parentActivityId": null,
+      "repeatingDates": null
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "reference": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "deletedTimestamp": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "timeDurationResourceDisplayText": {
+      "type": "string"
+    },
+    "cancelled": {
+      "type": "boolean"
+    },
+    "hasPayment": {
+      "type": "boolean"
+    },
+    "hasInvoice": {
+      "type": "boolean"
+    },
+    "repeatExdate": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "repeatRRule": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "toMidnight": {
+      "type": "boolean"
+    },
+    "repeatUntil": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fromDateTime": {
+      "type": "integer"
+    },
+    "toDateTime": {
+      "type": "integer"
+    },
+    "repeatFrom": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "toDateObject": {
+      "type": "integer"
+    },
+    "contactId": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "venueId": {
+      "type": "integer"
+    },
+    "status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pending": {
+      "type": "boolean"
+    },
+    "createdTimestamp": {
+      "type": "integer"
+    },
+    "membershipNumber": {
+      "type": "string"
+    },
+    "createdBy": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "billingRunId": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "noShow": {
+      "type": "boolean"
+    },
+    "rainOut": {
+      "type": "boolean"
+    },
+    "displayTextV1": {
+      "type": "string"
+    },
+    "fromDate": {
+      "type": "string"
+    },
+    "bondId": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "recurrent": {
+      "type": "boolean"
+    },
+    "fromTime": {
+      "type": "string"
+    },
+    "toTime": {
+      "type": "string"
+    },
+    "toDate": {
+      "type": "string"
+    },
+    "customData": {
+      "type": "string"
+    },
+    "nullBooking": {
+      "type": "boolean"
+    },
+    "recurrentInstance": {
+      "type": "boolean"
+    },
+    "recurrentActivityId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "recurrentActivityMetadata": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "hasUnpaidInvoice": {
+      "type": "boolean"
+    },
+    "fromDateObject": {
+      "type": "integer"
+    },
+    "membershipInfo": {
+      "type": "string"
+    },
+    "memberCardNumber": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "durationInHours": {
+      "type": "integer"
+    },
+    "roundedDurationInMinutes": {
+      "type": "integer"
+    },
+    "durationInMinutes": {
+      "type": "integer"
+    },
+    "repeatFromDate": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "repeatUntilDate": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "parentActivityId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "repeatingDates": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}
