@@ -578,6 +578,26 @@ paths:
           description: Booking Resource ID
           required: true
       description: Get booking fee in dollar
+  /member-service/import-members:
+    post:
+      summary: Import Members
+      tags: []
+      responses: {}
+      operationId: post-member-service-import-members
+      x-stoplight:
+        id: yrs7k4knenda6
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties: {}
+    parameters:
+      - schema:
+          type: integer
+        in: query
+        name: membershipTypeId
+        description: Membership Type ID
 components:
   schemas: {}
   securitySchemes:
