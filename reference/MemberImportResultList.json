@@ -1,0 +1,37 @@
+{
+  "title": "MemberImportResultList",
+  "x-stoplight": {
+    "id": "tvx1ma6xjcirh"
+  },
+  "type": "array",
+  "items": {
+    "$ref": "./MemberImportResult.json",
+    "x-stoplight": {
+      "id": "6poj9hudjwq62"
+    }
+  },
+  "examples": [
+    [
+      {
+        "success": true,
+        "failedMessage": null,
+        "firstName": "John",
+        "lastName": "Smith",
+        "originMembershipId": "e98ee7ef",
+        "originCardNumber": "12345",
+        "newMembershipId": "38229",
+        "newMembershipNumber": "100092"
+      },
+      {
+        "success": false,
+        "failedMessage": "Already imported!",
+        "firstName": "John",
+        "lastName": "Smith",
+        "originMembershipId": "e98ee7ef",
+        "originCardNumber": "12345",
+        "newMembershipId": null,
+        "newMembershipNumber": null
+      }
+    ]
+  ]
+}

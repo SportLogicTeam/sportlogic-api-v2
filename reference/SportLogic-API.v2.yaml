@@ -582,7 +582,13 @@ paths:
     post:
       summary: Import Members
       tags: []
-      responses: {}
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: ./MemberImportResultList.json
       operationId: post-member-service-import-members
       x-stoplight:
         id: yrs7k4knenda6

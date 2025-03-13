@@ -1,0 +1,69 @@
+{
+  "title": "MemberImportResult",
+  "x-stoplight": {
+    "id": "g5jzius6354lm"
+  },
+  "type": "object",
+  "properties": {
+    "success": {
+      "type": "boolean",
+      "x-stoplight": {
+        "id": "xvf1cu34yufko"
+      }
+    },
+    "failedMessage": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "lgs5ir3znotm2"
+      }
+    },
+    "firstName": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "v4ltpe53rdhdm"
+      }
+    },
+    "lastName": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "8lu2qodciuk4w"
+      }
+    },
+    "originMembershipId": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "5rmotu82y5sxp"
+      }
+    },
+    "originCardNumber": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "zldqxggb18z7u"
+      }
+    },
+    "newMembershipId": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "kpidgv2w9ijki"
+      }
+    },
+    "newMembershipNumber": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "wnlf8kfsqb2xv"
+      }
+    }
+  },
+  "examples": [
+    {
+      "success": true,
+      "failedMessage": null,
+      "firstName": "John",
+      "lastName": "Smith",
+      "originMembershipId": "e98ee7ef",
+      "originCardNumber": "12345",
+      "newMembershipId": "38229",
+      "newMembershipNumber": "100092"
+    }
+  ]
+}
