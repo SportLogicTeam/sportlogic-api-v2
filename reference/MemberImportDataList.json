@@ -1,0 +1,23 @@
+{
+  "title": "MemberImportDataList",
+  "x-stoplight": {
+    "id": "v2cuzf9xy1bw8"
+  },
+  "type": "array",
+  "items": {
+    "$ref": "./MemberImportData.json",
+    "x-stoplight": {
+      "id": "ojocmtv4rpupy"
+    }
+  },
+  "examples": [
+    [
+      {
+        "firstName": "John",
+        "lastName": "Smith",
+        "membershipId": "fd1a667c-e40e-4497-92f6-6c649465e110",
+        "cardNumber": "12345"
+      }
+    ]
+  ]
+}

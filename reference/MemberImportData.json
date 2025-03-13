@@ -1,0 +1,41 @@
+{
+  "title": "MemberImportData",
+  "x-stoplight": {
+    "id": "61hzpnyi46y2g"
+  },
+  "type": "object",
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "hsuy74v81t63o"
+      }
+    },
+    "lastName": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "rlu99w73i5dao"
+      }
+    },
+    "membershipId": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "yk4w1eavhzl50"
+      }
+    },
+    "cardNumber": {
+      "type": "string",
+      "x-stoplight": {
+        "id": "j1vojoes7n51g"
+      }
+    }
+  },
+  "examples": [
+    {
+      "firstName": "John",
+      "lastName": "Smith",
+      "membershipId": "fd1a667c-e40e-4497-92f6-6c649465e110",
+      "cardNumber": "12345"
+    }
+  ]
+}
