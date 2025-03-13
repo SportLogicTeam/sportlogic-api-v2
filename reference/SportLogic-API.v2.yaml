@@ -597,6 +597,17 @@ paths:
           application/json:
             schema:
               $ref: ./MemberImportDataList.json
+            examples:
+              Example 1:
+                value:
+                  - firstName: John
+                    lastName: Smith
+                    membershipId: fd1a667c-e40e-4497-92f6-6c649465e110
+                    cardNumber: '12345'
+                  - firstName: John Peter
+                    lastName: Smith
+                    membershipId: fd1a667c-e40e-4497-92f6-6c649465e110
+                    cardNumber: '12345'
     parameters:
       - schema:
           type: integer
