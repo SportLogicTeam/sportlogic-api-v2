@@ -614,6 +614,101 @@ paths:
         in: query
         name: membershipTypeId
         description: Membership Type ID
+  /member-service/create-member-registration:
+    parameters: []
+    post:
+      summary: Create Member Registration
+      tags: []
+      responses: {}
+      operationId: post-member-service-create-member-registration
+      x-stoplight:
+        id: lbu79nlkpa9ib
+      description: Add a new member registration. The supplied details will be used to create a new Contact. An optional 'parentAccount' can be specified to indicate that another Contact (the Parent-Account) should be created.
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              type: object
+              x-examples:
+                Example 1:
+                  membershipTypeId: 1
+                  firstName: David
+                  lastName: Ku
+                  gender: Male
+                  dob: null
+                  email: david.chen@example.com
+                  homePhone: '0387654321'
+                  workPhone: '0387659999'
+                  mobile: '0455666777'
+                  primaryContact: null
+                  fatherName: null
+                  fatherEmail: null
+                  motherName: null
+                  motherEmail: null
+                  addressLine1: 45 Market Street
+                  addressLine2: Level 5
+                  addressSuburb: Melbourne
+                  addressState: VIC
+                  addressPostcode: '3000'
+                  occupation: Software Engineer
+                  referralSource: Friend
+                  utrPlayerId: '54321'
+                  createParentAccount: false
+                  parentAccount: null
+              required:
+                - membershipTypeId
+                - firstName
+                - lastName
+              properties:
+                membershipTypeId:
+                  type: integer
+                firstName:
+                  type: string
+                lastName:
+                  type: string
+                gender:
+                  type: string
+                dob:
+                  nullable: true
+                email:
+                  type: string
+                homePhone:
+                  type: string
+                workPhone:
+                  type: string
+                mobile:
+                  type: string
+                primaryContact:
+                  nullable: true
+                fatherName:
+                  nullable: true
+                fatherEmail:
+                  nullable: true
+                motherName:
+                  nullable: true
+                motherEmail:
+                  nullable: true
+                addressLine1:
+                  type: string
+                addressLine2:
+                  type: string
+                addressSuburb:
+                  type: string
+                addressState:
+                  type: string
+                addressPostcode:
+                  type: string
+                occupation:
+                  type: string
+                referralSource:
+                  type: string
+                utrPlayerId:
+                  type: string
+                createParentAccount:
+                  type: boolean
+                parentAccount:
+                  nullable: true
 components:
   schemas: {}
   securitySchemes:
